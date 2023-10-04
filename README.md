@@ -4,8 +4,7 @@
 
 # Assignments
 
-	You will find bellow my solution to all the assignments I've done.
-
+	You will find bellow my solution to all the assignments I've done and to the Knowledge check.
 
 ***
 
@@ -275,5 +274,217 @@ $ mv old_file.txt new_file.txt
 ### How do you look at the history of your previous commits?
 
 > `git log`
+
+***
+
+# Introduction to HTML and CSS
+
+***
+
+### What do HTML and CSS stand for?
+
+> HTML = HyperText Markup Language, CSS =  Cascading Style Sheets
+
+***
+### Between HTML and CSS, which would you use for putting paragraphs of text on a webpage?
+
+> HTML, using the `&#60;p&#62; &#60;/p &#62; tag.
+
+***
+### Between HTML and CSS, which would you use for changing the font and background color of a button?
+
+> CSS, using the attribute `font-family: family-name font-style;` &  `background-color: color;`
+
+***
+### What is the difference between HTML, CSS and JavaScript?
+
+> HTML is used to place data on a document organized by tags, following a nested markup logic model.<br>
+> CSS is used to modify the style of the elements described on the HTML document, you can change the size, color, figure; etc.<br>
+> JS is used to control the elements of the web page, making the page more interactive, with JS you can place condition and logic to your page.
+
+***
+
+# Elements and Tags
+
+***
+
+### What is an HTML tag?
+
+> It's a piece of opening and closing labels which are used to create an element.<br>
+> There are limited and defined HTML tags
+
+***
+### What are the three parts of an HTML element?
+
+> The opening statement, the content of the tag, and the closing statement.<br>
+> `&#60;tag&#62; content  &#60;/tag &#62;`
+
+***
+
+# HTML Boilerplate
+
+***
+
+### What is the purpose of the doctype declaration?
+
+> To tell the browser which HTML version it should use to render our document.
+
+***
+### What is the HTML element?
+
+> It's the root element of our document, all other elements will be descendants from this element.
+
+***
+### What is the purpose of the head element?
+
+> To specify various meta data that will help the render the web page correctly.<br>
+> The title, page scale, the special characters encoding standard; etc.
+
+***
+### What is the purpose of the body element?
+
+> To hold the structure of our document data.
+
+***
+
+# Working with Text
+
+***
+
+### How do you create a paragraph in HTML?
+
+>
+`&#60;p&#62; &#60;/p&#62;`
+or using a break
+`&#60;br&#62;`
+
+***
+### How do you create a heading in HTML?
+
+> Using the heading tags, there are 6 sizes, 1 the biggest 6 the smallest<br>
+
+***
+### How many different levels of headings are there and what is the difference between them?
+
+> There are 6 levels.<br>
+> `&#60;h1&#62;&#60;/h1&#62;` `&#60;h2&#62;&#60;/h2&#62;` `&#60;h3&#62;&#60;/h3&#62;` `&#60;h4&#62;&#60;/h4&#62;` `&#60;h5&#62;&#60;/h5&#62;` `&#60;h6&#62;&#60;/h6&#62;` <br>
+> The difference is the size.
+
+***
+### What element should you use to make text bold and important?
+
+> `&#60;strong&#62;`
+
+***
+### What element should you use to make text italicized to add emphasis to it?
+
+> `&#60;em&#62;`
+
+***
+### What relationship does an element have with any nested elements within it?
+
+> Parent-Child the nested elements are the child of the element surrounding them, they also inherit the parent style in some cases.
+
+***
+### What relationship do two elements have if they are at the same level of nesting?
+
+> Siblings.
+
+***
+### How do you create HTML comments?
+
+> `&#60;!-- YOUR COMMENTS GO HERE --&#62;`
+
+***
+
+# Lists
+
+***
+
+### What HTML element is used to create an unordered list?
+
+> `&#60;ul&#62;`
+
+***
+### What HTML element is used to create an ordered list?
+
+> `&#60;ol&#62;`
+
+***
+### What HTML element is used to create list items within both unordered and ordered lists?
+
+> `&#60;li&#62;`
+
+***
+
+# Links and Images
+
+***
+
+### What element is used to create a link?
+
+> `&#60;a&#62;` with the href attribute
+
+***
+### What is an attribute?
+
+> It is an part of the tag that specifies a certain configuration of the element. Attributes might help you set up a reference, size, meta data; etc.
+
+***
+### What attribute tells links where to go to?
+
+> The href attribute specifies the place where a link should go to, while the target attribute tells how to open that link.
+
+***
+### What security considerations must be taken if you wish to use the target attribute to open links in a new tab/window?
+
+> Weather you want or not for the link to reference it's origin, and if you wish to give access to the page via the link.<br>
+> It is recommended to not give access by setting up the attributes `rel="noopener noreferrer"`
+
+***
+### What is the difference between an absolute and relative link?
+
+> An absolute link will not build the url with the current location. The url is exactly what the data on the document.<br>
+> The relative link is a link that will be built on top of the current location where the link was opened.
+
+***
+### Which element is used to display an image?
+
+> `&#60;img&#62;` with the *src* attribute
+
+***
+### What two attributes do images always need to have?
+
+> The *src* and *alt*
+
+***
+### How do you access a parent directory in a filepath?
+
+> `../`
+
+***
+### What are the four main image formats that you can use for images on the web?
+
+> JPG, PNG, GIF & SVG<br>
+- jpg : Great for photos with huge color palettes, although it doesn't allow transparency<br>
+- png : Great for images, like logos, supports transparency but it's usually a bigger file<br>
+- gif : Can be used for animations, it works for anything that a png could be used<br>
+- svg: It's not a pixel-based image, it's vector based, which is great for scaling, since the image will never loose quality, using svg is usually better than using png<br>
+
+***
+
+# Commit Messages
+
+***
+
+### What are two benefits of having well-written commit messages and a good commit history?
+
+> 1 - It's easier to navigate between versions, gives a better perspective to the project<br>
+> 2 - It's more welcoming to fellow programmers, they can get a better sense of what is happening on the code and how it evolves<br>
+
+***
+### How many characters should the subject line of your commit message be?
+
+> Limit to Maximum 50 characters
 
 ***

@@ -145,7 +145,7 @@
 > With the "make directory" command + directory name [`mkdir`]
 
 ***
-###How do you create a new file?
+### How do you create a new file?
 
 > Using the `touch` command + file name, or by using a redirection token on the cli [`>` simple] [`>>` append]
 ```
@@ -258,7 +258,7 @@ $ mv old_file.txt new_file.txt
 ***
 ### How do you add files to the staging area in git?
 
-> with the `git add` + filename command, you can use `"."` to stage all the files, or `-p` to patch all the modified files.
+> With the `git add` + filename command, you can use `"."` to stage all the files, or `-p` to patch all the modified files.
 
 ***
 ### How do you commit the files in the staging area and add a descriptive message?
@@ -477,7 +477,7 @@ or using a break
 
 ***
 
-### What are two benefits of having well-written commit messages and a good commit history?
+### What are two benefits of having well-written commit messages and a good commit history?
 
 > 1 - It's easier to navigate between versions, gives a better perspective to the project<br>
 > 2 - It's more welcoming to fellow programmers, they can get a better sense of what is happening on the code and how it evolves<br>

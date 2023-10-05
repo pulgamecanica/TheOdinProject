@@ -2,17 +2,121 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Odin Recipes</title>
 </head>
 <body>
-	<h1>Odin Recipes :</h1>
+	<hr>
+	<h1 class="title">Odin Recipes :</h1>
 	<hr>
 	<br>
-
-	<ul>
-		<li><h4><a href="./recipes/guacamole.html" target="_blank" rel="noopener noreferrer">Guacamole 🥑 </a></h4></li>
-		<li><h4><a href="./recipes/bibimbap.html" target="_blank" rel="noopener noreferrer">Bibimbap 🍜 </a></h4></li>
-		<li><h4><a href="./recipes/mexican_shrimp_cocktail.html" target="_blank" rel="noopener noreferrer">Mexican Shrimp Cocktail 🍤</a></h4></li>
+	<ul class="recipes-list">
+		<li class="recipe-container">
+			<!-- Direct Link -->
+			<h4 class="recipe-direct-link"><a href="./recipes/guacamole.html" target="_blank" rel="noopener noreferrer">Guacamole 🥑 </a></h4>
+			<!-- Cute Pop-Up Link -->
+			<a id="guacamole-bg" class="recipe-card-link" href="./recipes/guacamole.html" target="_blank" rel="noopener noreferrer">
+				<!-- Description following Image -->
+				<h5 class="recipe-card-description no-padding-bottom">This guacamole recipe gets a tasty kick from cayenne and cilantro.</h5>
+				<div class="recipe-card-summary">
+					<!-- Recipe Summary Ingredients-->
+					<div>
+						<span id="fork-icon">🍴</span>
+						<p><strong>Ingredients:</strong> Avocados, Lime, Salt, Vegetables, Onion, Tomatoes Herbsand & Spices.
+					</div>
+					<!-- Recipe Summary Steps -->
+					<div>
+						<span id="tasks-icon">📋</span>
+						<p>
+							<strong>Steps:</strong>
+							Mash avocados, lime juice, and salt together in a medium bowl;<br>
+							mix in tomatoes, onion, cilantro,<br>
+							and garlic. Stir in cayenne pepper.<br>
+							Serve immediately, or cover and <br>
+							refrigerate for 1 hour for improved flavor.
+						</p>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li class="recipe-container">
+			<!-- Direct Link -->
+			<h4 class="recipe-direct-link"><a href="./recipes/bibimbap.html" target="_blank" rel="noopener noreferrer">Bibimbap 🍜 </a></h4>
+			<!-- Cute Pop-Up Link -->
+			<a id="bibimbap-bg" class="recipe-card-link" href="./recipes/bibimbap.html" target="_blank" rel="noopener noreferrer">
+				<!-- Description following Image -->
+				<h5 class="recipe-card-description no-padding-bottom">This bibimbap recipe makes a popular and delicious Korean meal.</h5>
+				<div class="recipe-card-summary">
+					<!-- Recipe Summary Ingredients-->
+					<div>
+						<span id="fork-icon">🍴</span>
+						<p><strong>Ingredients:</strong> English cucumber, Gochujang, Spinach, Soy Sauce, Olive Oil, Carrots, Clove Garlic, Red Pepper Flakes, Beef, Large Eggs, White Rice, Sesame Oil & Sesame Seeds
+						</p>
+					</div>
+					<!-- Recipe Summary Steps -->
+					<div>
+						<span id="tasks-icon">📋</span>
+						<p>
+							<strong>Steps:</strong>
+							Stir together cucumber pieces and gochujang paste in a bowl.
+							Bring about 2 cups water to a boil in a large nonstick skillet
+							and stir in spinach; cook until bright green and wilted, 2 to 3 minutes.
+							Drain spinach and squeeze out as much moisture as possible;
+							set spinach aside in a bowl and stir in soy sauce.
+							Heat 1 teaspoon olive oil in a large nonstick skillet;
+							cook and stir carrots until softened, about 3 minutes.
+							Stir in garlic and cook just until fragrant, about 1 minute.
+							Stir in cucumber mixture; sprinkle with red pepper flakes.
+							Set carrot mixture aside in a bowl.
+							Brown beef in a clean nonstick skillet over medium heat,
+							about 5 minutes per side; set aside.
+							Heat remaining 1 teaspoon olive oil in another nonstick skillet
+							over medium-low heat. Fry eggs just on one side until yolks are runny,
+							but whites are firm, 2 to 4 minutes.
+							Divide cooked rice into 4 large serving bowls; top with spinach mixture,
+							a few pieces of beef, and cucumber mixture. Place 1 egg atop each serving.
+							Drizzle each bowl with 1 teaspoon sesame oil, a sprinkle of sesame seeds,
+							and a small amount of gochujang paste if desired.
+						</p>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li class="recipe-container">
+			<!-- Direct Link -->
+			<h4 class="recipe-direct-link"><a href="./recipes/mexican_shrimp_cocktail.html" target="_blank" rel="noopener noreferrer">Mexican Shrimp Cocktail 🍤</a></h4>
+			<!-- Cute Pop-Up Link -->
+			<a id="mexican-shrimp-cocktail-bg" class="recipe-card-link" href="./recipes/mexican_shrimp_cocktail.html" target="_blank" rel="noopener noreferrer">
+				<!-- Description following Image -->
+				<h5 class="recipe-card-description no-padding-bottom">This shrimp cocktail recipe is similar to one I first tried in San Antonio.I could never find a recipe that recaptured what I had there.</h5>
+				<div class="recipe-card-summary">
+					<!-- Recipe Summary Ingredients-->
+					<div>
+						<span id="fork-icon">🍴</span>
+						<p><strong>Ingredients:</strong> Cooked Shrimp, Red Onion, Fresh Cilantro, Crushed Garlic, Clam Juice Cocktail, Ketchup, Fresh Lime Juice, Horseradish, Hot Pepper Sauce, Avocado</p>
+					</div>
+					<!-- Recipe Summary Steps -->
+					<div>
+						<span id="tasks-icon">📋</span>
+						<p>
+							<strong>Steps:</strong>
+							Gather all ingredients.
+							Place shrimp in a large bowl.
+							Stir in red onion, cilantro, and garlic.
+							Add tomato and clam juice, ketchup,
+							lime juice, horseradish, and hot pepper sauce;
+							mix well to combine. Season with salt.
+							Gently stir in avocado.
+							Cover, and refrigerate for 2 to 3 hours
+						</p>
+					</div>
+				</div>
+			</a>
+		</li>
 	</ul>
 </body>
 </html>

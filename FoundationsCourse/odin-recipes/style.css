@@ -1,0 +1,152 @@
+:root {
+  --dark: #555B6E;
+  --card-w-size: 350px;
+  --card-h-size: 600px;
+  --light: #FAF9F9;
+  --light-pistachio: #BEE3DB;
+  --red: #FFD6BA;
+  --pistachio: #89B0AE;
+  --recipe-w-size: 600px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  color: var(--dark);
+}
+
+body {
+  font-family: 'Chakra Petch', monospace;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light-pistachio);
+}
+
+.home-btn {
+  background-color: var(--red);
+  padding: 1rem;
+  margin: auto;
+  display: inline-block;
+  float: left;
+  border-radius: 0 0 0.5em 0;
+  font-size: 18px;
+  font-weight: bold;
+  animation: fadeInLeft;
+  animation-duration: 1s;
+}
+
+.home-btn:hover {
+  opacity: 0.9;
+}
+
+.title {
+  padding: 1rem;
+  animation: backInLeft;
+  animation-duration: 1.5s;
+  display: block;
+}
+
+.recipe {
+  text-align: center;
+  display: block;
+  width: var(--recipe-w-size);
+  margin: auto;
+  animation: fadeIn;
+  animation-duration: 1s;
+}
+
+.recipe img {
+  width: var(--recipe-w-size);
+  height: auto;
+  max-height: 450px;
+}
+
+
+.recipe ol,
+.recipe ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.recipe li {
+  margin-bottom: 5px;
+}
+
+.recipe-container {
+  position: relative;
+}
+
+
+.recipe-container, .recipe-card-link {
+  display: inline;
+  margin: auto;
+  padding: 0;
+}
+
+.recipe-card-link {
+  animation: flipInY;
+  animation-duration: 1s;
+  border-radius: 0.75em 0.75em;
+  background-color: var(--pistachio);
+  background-position: top;
+  background-repeat: repeat;
+  background-size: cover;
+  border: 1px var(--light) solid;
+  color: var(--dark);
+  display: none;
+  text-decoration: none;
+  margin: auto;
+  max-height: var(--card-h-size);
+  left: 50px;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-top: 200px;
+  position: absolute;
+  width: var(--card-w-size);
+  z-index: 1;
+}
+
+#guacamole-bg {
+  background-image: url("./images/guacamole.jpg");
+}
+
+#bibimbap-bg {
+  background-image: url("./images/bibimbap.jpg");
+}
+
+#mexican-shrimp-cocktail-bg {
+  background-image: url("./images/mexican_shrimp_cocktail.jpg");
+}
+
+.recipe-container:hover .recipe-card-link {
+  display: inline-block;
+}
+
+.recipe-container:hover .recipe-direct-link a {
+  color: var(--red);
+}
+
+.recipe-card-link .recipe-card-description,
+.recipe-card-link .recipe-card-summary {
+  background-color: var(--light);
+  padding: 1em;
+}
+.recipe-container .recipe-card-link:hover .recipe-card-description{
+  text-decoration: underline;
+}
+
+.recipe-card-link .recipe-card-description.no-padding-bottom {
+  padding-bottom: 0.0;
+}
+
+.recipe-card-link .recipe-card-summary div {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: start;
+  gap: 1em;
+  margin-bottom: 10px;
+}

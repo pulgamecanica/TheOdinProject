@@ -8,12 +8,16 @@
 
 | Course | Assignment's Name | Link |
 | ------ | ------------ | ---- |
-| Foundations | Project: Recipes | [🥑🍜🍤](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/odin-recipes/)
+| Foundations | HTML Foundations - Project: Recipes | [🥑🍜🍤](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/odin-recipes/)
 | Foundations | Intro to CSS - css methods | [📝🤵 css methods](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/01-css-methods/)
 | Foundations | Intro to CSS - css class id selectors | [📝🤵 css class id selectors](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/02-class-id-selectors/)
 | Foundations | Intro to CSS - css grouping selectors | [📝🤵 css grouping selectors](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/03-grouping-selectors/)
-| Foundations | Intro to CSS - css chaning selectors | [📝🤵 css chaning selectors](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/04-chaning-selectors/)
+| Foundations | Intro to CSS - css chaning selectors | [📝🤵 css chaning selectors](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/04-chaining-selectors/)
 | Foundations | Intro to CSS - css descendant combinator | [📝🤵 css descendant combinator](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/05-descendant-combinator/)
+| Foundations | The Cascade - css cascade fix | [🌊👨‍🔧🛠️ css cascade fix](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/06-cascade-fix/)
+| Foundations | The Cascade - Project: Recipes | [🥑🍜🍤](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/odin-recipes/)
+
+file:///Users/andrehernandez/Documents/TheOdinProject/FoundationsCourse/odin-recipes/index.html
 
 ***
 
@@ -501,5 +505,63 @@ or using a break
 ### How many characters should the subject line of your commit message be?
 
 > Limit to Maximum 50 characters
+
+***
+
+
+# Intro to CSS
+
+***
+### What is the syntax for class and ID selectors?
+
+> \#id-case-sensitive-name
+
+***
+### How would you apply a single rule to two different selectors?
+
+> Using a coma separated list<br>
+```
+div, p {
+  rule: value;
+}
+```
+
+***
+### Given an element that has an id of title and a class of primary, how would you use both attributes for a single rule?
+
+>
+```
+.primary#title {
+}
+```
+
+***
+### What does the descendant combinator do?
+
+> It will cause the last selector to be selected, this, is a selector which has the ancestors which are in place.
+
+***
+### What are the names of the three ways to add CSS to HTML?
+
+> - *External CSS* (Linking)<br>
+> - *Internal CSS* (Embedded)<br>
+> - *Inline CSS* In-Place
+
+***
+### What are the main differences between the three ways of adding CSS to HTML?
+
+> The External is the most useful because you can modify all the css in a single file. Specially useful when you have multiple pages.
+> Internal is good when the style is _ONLY_ going to be used in that web page.
+> Inline is usually a bad practice because it will doom the element forever, you would need to change directly the element, which can be painful when you have a big web page.
+
+***
+
+
+# The Cascade
+
+***
+### Between a rule that uses one class selector and a rule that uses three type selectors, which rule has the higher specificity?
+
+> The rule that uses the class selector will always beat a type selector rule.
 
 ***

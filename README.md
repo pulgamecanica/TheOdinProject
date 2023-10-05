@@ -4,7 +4,22 @@
 
 # Assignments
 
-	You will find bellow my solution to all the assignments I've done and to the Knowledge check.
+	You will find bellow my solution to all the assignments I've done.
+
+| Course | Assignment's Name | Link |
+| ------ | ------------ | ---- |
+| Foundations | Project: Recipes | [🥑🍜🍤](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/odin-recipes/)
+| Foundations | Intro to CSS - css methods | [📝🤵 css methods](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/01-css-methods/)
+| Foundations | Intro to CSS - css class id selectors | [📝🤵 css class id selectors](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/02-class-id-selectors/)
+| Foundations | Intro to CSS - css grouping selectors | [📝🤵 css grouping selectors](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/03-grouping-selectors/)
+| Foundations | Intro to CSS - css chaning selectors | [📝🤵 css chaning selectors](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/04-chaning-selectors/)
+| Foundations | Intro to CSS - css descendant combinator | [📝🤵 css descendant combinator](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/05-descendant-combinator/)
+
+***
+
+# Knowledge check.
+
+	You will find bellow my solution to all the knowledge checks I've done.
 
 ***
 

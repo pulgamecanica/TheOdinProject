@@ -16,8 +16,8 @@
 | Foundations | Intro to CSS - css descendant combinator | [📝🤵 css descendant combinator](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/05-descendant-combinator/)
 | Foundations | The Cascade - css cascade fix | [🌊👨‍🔧🛠️ css cascade fix](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/06-cascade-fix/)
 | Foundations | The Cascade - Project: Recipes | [🥑🍜🍤](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/odin-recipes/)
-
-file:///Users/andrehernandez/Documents/TheOdinProject/FoundationsCourse/odin-recipes/index.html
+| Foundations | Block and Inline - margin and padding-1 | [🪡🔲🔳 margin & padding 1](https://pulgamecanica.github.io/TheOdinProjec/FoundationsCourse/02-margin-and-padding-1/index.html)|
+| Foundations | Block and Inline - margin and padding-2 | [🪡🔲🔳 margin & padding 2](https://pulgamecanica.github.io/TheOdinProjec/FoundationsCourse/02-margin-and-padding-2/index.html)|
 
 ***
 
@@ -563,5 +563,114 @@ div, p {
 ### Between a rule that uses one class selector and a rule that uses three type selectors, which rule has the higher specificity?
 
 > The rule that uses the class selector will always beat a type selector rule.
+
+***
+
+# Inspecting HTML and CSS
+
+***
+
+### How do you select a specific element on your page with your browser’s developer tools?
+
+> You can either hover the node on the Elements section, or choose the hover tool and hover the element on the webpage.
+
+***
+
+### What does a strikethrough in a CSS declaration mean in your browser’s developer tools?
+
+> That the CSS rule was overwritten.
+
+***
+### How do you change CSS in real time on specific elements of a web page with your browser’s developer tools?
+
+> In the styling section, you can add styles or edit them, without needing to reload the page.
+
+***
+
+# The Box Model
+
+***
+
+### From inside to outside, what is the order of box-model properties?
+
+>  The element content, the padding, the border & the margin.
+
+***
+### What does the box-sizing CSS property do?
+
+>  When we use box-sizing we can change how elements count the width and heigh properties, either taking into account also padding and border, on just the element size.
+
+***
+### What is the difference between the standard and alternative box model?
+
+> The standard box model will respect the height and width properties given, and apply them to the content box.<br>
+> This is not always the best solution, since the box is define beyond the content, including the border and padding.<br>
+> So a box might be bigger than what you would expect. You can change this behavior by altering the box model.<br>
+> Then the height and width attributes will define the box size, including the border and padding, and the content will grow in order to fill the values given.
+
+***
+### Would you use margin or padding to create more space between 2 elements?
+
+> `margin`
+
+***
+### Would you use margin or padding to create more space between the contents of an element and its border?
+
+> `padding`
+
+***
+### Would you use margin or padding if you wanted two elements to overlap each other?
+
+> `margin, with a negative value`
+
+***
+### How do you set the alternative box model for all of your elements?
+
+>  
+```
+* {
+  box-sizing: border-box;`
+}
+```
+
+***
+### How do you center an element horizontally?
+
+> By defining a width and using `margin: 0 auto;` or `margin-left: auto; margin-right: auto;` the element will center horizontally.
+
+***
+
+# Block and Inline
+
+***
+### What is the difference between a block element and an inline element?
+
+> A block element will take all the inline space available of the parent when no width or height are defined and cause other elements to move away from it.<br>
+> An inline element doesn't respect the width and height attributes, and will not cause elements to move away from it, it will take just the space it requires.
+
+***
+### What is the difference between an inline element and an inline-block element?
+
+> An inline element doesn't respect the margin, or border attributes, nor the height or width, while inline-block will indeed respect this attributes.
+
+***
+### Is an h1 block or inline?
+
+> `block`
+
+***
+### Is button block or inline?
+
+> `inline`
+
+***
+### Is div block or inline?
+
+> `block`
+
+***
+### Is span block or inline?
+
+> `inline`
 
 ***

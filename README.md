@@ -16,8 +16,15 @@
 | Foundations | Intro to CSS - css descendant combinator | [📝🤵 css descendant combinator](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/05-descendant-combinator/)
 | Foundations | The Cascade - css cascade fix | [🌊👨‍🔧🛠️ css cascade fix](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/06-cascade-fix/)
 | Foundations | The Cascade - Project: Recipes | [🥑🍜🍤](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/odin-recipes/)
-| Foundations | Block and Inline - margin and padding-1 | [🪡🔲🔳 margin & padding 1](https://pulgamecanica.github.io/TheOdinProjec/FoundationsCourse/02-margin-and-padding-1/index.html)|
-| Foundations | Block and Inline - margin and padding-2 | [🪡🔲🔳 margin & padding 2](https://pulgamecanica.github.io/TheOdinProjec/FoundationsCourse/02-margin-and-padding-2/index.html)|
+| Foundations | Block and Inline - margin and padding-1 | [🪡🔲🔳 margin & padding 1](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/02-margin-and-padding-1/index.html)|
+| Foundations | Block and Inline - margin and padding-2 | [🪡🔲🔳 margin & padding 2](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/02-margin-and-padding-2/index.html)|
+| Foundations | Alignment - flex center | [🎯 flex center](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/01-flex-center/index.html) |
+| Foundations | Alignment - flex header | [📝 flex header](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/02-flex-header/index.html) |
+| Foundations | Alignment - flex header-2 | [📝 flex header 2](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/03-flex-header-2/index.html) |
+| Foundations | Alignment - flex information | [ℹ️ flex information](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/04-flex-information/index.html) |
+| Foundations | Alignment - flex modal | [⚠️ flex modal](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/05-flex-modal/index.html) |
+| Foundations | Alignment - flex layout | [🧮 felx layout](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/06-flex-layout/index.html) |
+| Foundations | Alignment - flex layout-2 | [🧮 felx layout 2](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/07-flex-layout-2/index.html) |
 
 ***
 
@@ -307,7 +314,7 @@ $ mv old_file.txt new_file.txt
 ***
 ### Between HTML and CSS, which would you use for putting paragraphs of text on a webpage?
 
-> HTML, using the `&#60;p&#62; &#60;/p &#62; tag.
+> HTML, using the `&#60;p&#62; &#60;/p &#62;` tag.
 
 ***
 ### Between HTML and CSS, which would you use for changing the font and background color of a button?
@@ -672,5 +679,85 @@ div, p {
 ### Is span block or inline?
 
 > `inline`
+
+***
+
+# Introduction to Flexbox
+
+***
+
+### What’s the difference between a flex container and a flex item?
+
+> A flex container has the property display flex.<br>
+> A flex item is any children of an element which contains the display flex property.<br>
+> This concepts are not exclusive, and a flex container can also be a flex item.<br>
+
+***
+### How do you create a flex item?
+
+> Any children of an element with display flex, will automatically become a flex item.
+
+***
+
+# Growing and Shrinking
+
+***
+
+### What are the 3 values defined in the shorthand flex property (e.g. flex: 1 1 auto)?
+
+> `flex-grow`, `flex-shrink` & `flex-basis`
+
+***
+### What are the 3 defined values for the flex shorthand flex:auto?
+
+> `flex-grow: 1; flex-shrink: 1; flex-basis: auto`
+
+***
+
+# Axes
+
+***
+
+### How do you make flex items arrange themselves vertically instead of horizontally?
+
+> `flex-direction: column;`
+
+***
+### In a column flex-container, what does flex-basis refer to?
+
+> To the initial *height* of the flex-item.
+
+***
+### In a row flex-container, what does flex-basis refer to?
+
+> To the initial *width* of the flex-item.
+
+***
+### Why do the previous two questions have different answers?
+
+> Because the flex-direction influences the flex-grow property, thus changing it's meaning.<br>
+> It makes sense, since you want the direction to change accordingly the properties.
+
+***
+
+# Alignment
+
+***
+
+### What is the difference between justify-content and align-items?
+
+> Justify-content will distribute the items in the same direction of the flex-direction property: horizontally or vertically.<br>
+> Align-items will distribute the items in the opposite direction which flex-direction has.
+
+***
+### How do you use flexbox to completely center a div inside a flex container?
+
+> `justify-content: center; align-items: center;`
+
+***
+### What’s the difference between justify-content: space-between and justify-content: space-around?
+
+> Space around will distribute all elements evenly using all the available space.<br>
+> Space between will distribute all elements using all the available space towards the center, with items on both start and end.
 
 ***

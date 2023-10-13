@@ -16,7 +16,7 @@
 | Foundations | Intro to CSS - css descendant combinator | [📝🤵 css descendant combinator](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/05-descendant-combinator/)
 | Foundations | The Cascade - css cascade fix | [🌊👨‍🔧🛠️ css cascade fix](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/06-cascade-fix/)
 | Foundations | The Cascade - Project: Recipes | [🥑🍜🍤](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/odin-recipes/)
-| Foundations | Block and Inline - margin and padding-1 | [🪡🔲🔳 margin & padding 1](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/02-margin-and-padding-1/index.html)|
+| Foundations | Block and Inline - margin and padding-1 | [🪡🔲🔳 margin & padding 1](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/01-margin-and-padding-1/index.html)|
 | Foundations | Block and Inline - margin and padding-2 | [🪡🔲🔳 margin & padding 2](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/02-margin-and-padding-2/index.html)|
 | Foundations | Alignment - flex center | [🎯 flex center](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/01-flex-center/index.html) |
 | Foundations | Alignment - flex header | [📝 flex header](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/02-flex-header/index.html) |
@@ -25,6 +25,7 @@
 | Foundations | Alignment - flex modal | [⚠️ flex modal](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/05-flex-modal/index.html) |
 | Foundations | Alignment - flex layout | [🧮 felx layout](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/06-flex-layout/index.html) |
 | Foundations | Alignment - flex layout-2 | [🧮 felx layout 2](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/07-flex-layout-2/index.html) |
+| Foundations | Flexbox - Project: Landing Page | [👒📟👨‍💻 One Piece Landing Page](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/landing-page/index.html) |
 
 ***
 

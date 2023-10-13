@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "OnePieceFont";
+  src:
+    local("OnePieceFont"),
+    url("./fonts/OnePieceFont.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: lemonchiffon;
+  font-family: 'OnePieceFont', monospace, sans-serif;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  display: block;
+  text-align: right;
+}
+.d-jaround {
+  justify-content: space-around;
+}
+
+.d-jbetween {
+  justify-content: space-between;
+}
+
+.d-jcenter {
+  justify-content: center;
+}
+
+.d-jend {
+  justify-content: flex-end;
+}
+
+.d-acenter {
+  align-items: center;
+}
+
+.card-md {
+  max-width: 300px;
+  height: auto;
+}
+
+.card-sm {
+  max-width: 150px;
+  height: auto;
+}
+
+.card-lg {
+  max-width: 600px;
+  height: auto;
+}
+
+.section,
+.subsection,
+.links,
+.logo {
+  display: flex;
+  position: relative;
+}
+
+.section {
+  min-height: 40vh;
+  flex-direction: column;
+}
+
+.subsection.fill {
+  flex: 1;
+}
+
+.section#header {
+  cursor: url("./images/MeryCursor.gif") 1 1, auto;
+  padding: 0.2rem;
+  background-image: url("./images/GrandLineBG.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.links {
+  align-items: center;
+  gap: 1rem;
+}
+
+.links a {
+  flex: 1 auto;
+  color: gray;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.logo {
+  font-family: 'OnePieceFont', monospace, sans-serif;
+  align-items: center;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.links a,
+.logo {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  color: white;
+}
+
+#header .subsection .card {
+  color:  white;
+}
+
+.card button {
+  color: white;
+  font-weight: bold;
+  font-family: 'OnePieceFont', monospace, sans-serif;
+  letter-spacing: 0.2rem;
+  background-color: rgb(130, 100, 60);
+  border: 0.2rem rgb(96, 85, 49) solid;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}
+
+#header .subsection .card h1 {
+  margin: 0.2rem auto;
+  font-size: 34px;
+}
+
+#header .subsection .card p {
+  margin: 0.5rem auto;
+  color: rgb(245, 235, 235);
+}
+
+.card-video {
+  cursor: auto;
+  border: 5px rgb(96, 85, 49) solid;
+  border-radius: 0.5rem;
+}
+
+.section#bounty {
+  cursor: url("./images/OnePieceLogoCursor.png") 1 1, auto;
+  min-height: 600px;
+  background-image: url("./images/BountyBoardBG.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+
+#bounty .subsection {
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.shadow-card {
+  cursor: pointer;
+}
+
+.shadow-card:hover .card-text {
+  display: block;
+}
+
+.shadow-card .card-text {
+  display: none;
+  background-color: rgba(242, 242, 242, 0.4);
+}
+
+.card-text {
+  margin: 0;
+  padding: 0.2rem;
+  border-radius: 0 0 1rem 1rem;
+  text-align: center;
+}
+
+.shadow-card .card-img {
+  box-shadow: 5px -2px 6px 4px rgba(42, 42, 42, 0.3);
+}
+
+.card-img {
+  width: 150px;
+  height: 220px;
+}
+
+#fixedBG {
+  position: fixed;
+
+}
+
+.section#banquet {
+  cursor: none;
+  width: 100%;
+  height: 60%;
+  min-height: 500px;
+  margin: 0 !important;
+  color: white;
+}
+
+.fixed-rect {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fixed-content {
+  background-image: url("./images/BanquetBG.webp");
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: bottom;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.curtain {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 50, 0.45);
+  position: absolute;
+  z-index: 1;
+}
+
+.section#quote {
+  background-image: url("./images/TreasureBG.webp");
+  background-position: center center;
+  background-size: cover;
+}
+
+#quote .subsection {
+  background-color: rgba(42, 42, 42, 0.8);
+  gap:  5rem;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  color: white;
+}
+
+footer {
+  padding: 1rem;
+}

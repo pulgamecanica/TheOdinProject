@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>One Piece</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://vjs.zencdn.net/8.6.0/video-js.css" rel="stylesheet" />
+  <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+  <script type="text/javascript">
+    window.addEventListener("load", (event) => {
+      let header = document.getElementById("header");
+      let bounty = document.getElementById("bounty");
+      let banquet = document.getElementById("banquet");
+      new cursoreffects.ghostCursor({element: header, image: "./images/MeryCursor.gif"});
+      new cursoreffects.trailingCursor({element: bounty, baseImageSrc: "./images/OnePieceLogoCursor.gif"});
+      new cursoreffects.ghostCursor({element: banquet, image: "./images/MeryCursor.gif"});
+    });
+    
+  </script>
+</head>
+<body>
+<!-- Header Section, Nav and Intro Video -->
+<div class="section" id="header">
+  <nav class="subsection d-jaround">
+    <button class="logo">
+      <img src="./images/LuffyWalkAnimation.gif"/ width="50" height="50">
+      OnePiece
+    </button>
+    <div class="links">
+      <a href="#banquet">Try Banquet</a>
+      <a href="#bounty">See Bounties</a>
+      <a href="#quote">Become Pirate</a>
+    </div>
+  </nav>
+  <div class="subsection fill d-jaround d-acenter">
+    <div class="card card-md">
+      <h1>Find the hottest bounties and become a pirate!</h1>
+      <p>Latest One Piece actualizations. We offer the best tools to become a real pirate.</p>
+      <button> Sign Up </button>
+    </div>
+    <div class="card card-md video-clips">
+      <video  class="card-video" width="400" height="auto" controls preload="auto" poster="./images/TreasureBG.webp">
+        <source src="./videos/zoroClip.mp4" type="video/mp4">
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a
+          web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+      </video>
+    </div>
+  </div>
+</div>
+<!-- Bounty Sections  -->
+<div class="section" id="bounty">
+  <h1 class="center"> Latest Bounties</h1>
+  <div class="subsection d-jcenter d-acenter">
+    <div class="card card-sm shadow-card">
+      <div class="card-img">
+        <img src="images/LuffyBounty.jpg" width="150" height="220">
+      </div>
+      <p class="card-text">Monkey D Luffy, The King of the Pirates!</p>
+    </div>
+    <div class="card card-sm shadow-card">
+      <div class="card-img">
+        <img src="images/ShanksBounty.jpg" width="150" height="220">
+      </div>
+      <p class="card-text">Shanks, the strongest of all the Emperors of the Sea!</p>
+    </div>
+    <div class="card card-sm shadow-card">
+      <div class="card-img">
+        <img src="images/ChopperBounty.jpeg" width="150" height="220">
+      </div>
+      <p class="card-text">Chopper, the cutest doctor on the Grand Line!</p>
+    </div>
+    <div class="card card-sm shadow-card">
+      <div class="card-img">
+        <img src="images/ZoroBounty.jpg" width="150" height="220">
+      </div>
+      <p class="card-text">The true Right Hand of the Kink of the Pirates, 2nd best swords man in the world!</p>
+    </div>
+    <div class="card card-sm shadow-card">
+      <div class="card-img">
+        <img src="images/SaboBounty.jpeg" width="150" height="220">
+      </div>
+      <p class="card-text">Sabo, the new face of the Revolutionary Army!</p>
+    </div>
+  </div>
+</div>
+<!-- Banquet & Food -->
+<div class="section" id="banquet">
+  <div class="fixed-rect">
+      <div class="subsection curtain d-jcenter d-acenter">
+        <div class="card card-lg">
+          <h1 class="card-text">"In the world of pirates, where the sea meets adventure, food is the heartbeat of our crew. It's the taste of our dreams and the fire in our souls! When I'm the Pirate King, I'll make sure no one ever goes hungry again!"</h1>
+          <em class="right">- Monkey D. Luffy</em>
+        </div>
+      </div>
+    <div class="fixed-content">
+    </div>
+  </div>
+</div>
+<!-- Treasure Quote-->
+<div class="section" id="quote">
+  <div class="card card-lg subsection d-acenter m-auto">
+    <div>
+      <h3 class="card-text">"My fortune is yours for the taking, but you'll have to find it first. I left everything I own in One Piece."</h3>
+      <em class="right">- Gol D. Roger</em>
+    </div>
+    <button class="button">Create your Pirate crew!</button>
+  </div>
+</div>
+<footer class="subsection d-jcenter" id="footer">
+  Copyright ® The One Piece 2023
+</footer>
+<script src="https://vjs.zencdn.net/8.6.0/video.min.js"></script>
+</body>
+</html>

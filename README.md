@@ -26,6 +26,8 @@
 | Foundations | Alignment - flex layout | [🧮 felx layout](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/06-flex-layout/index.html) |
 | Foundations | Alignment - flex layout-2 | [🧮 felx layout 2](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/07-flex-layout-2/index.html) |
 | Foundations | Flexbox - Project: Landing Page | [👒📟👨‍💻 One Piece Landing Page](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/landing-page/index.html) |
+| Foundations | JavaScript Basics - Fundamentals Part 1 | [📝 Fundamentals Part 1](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/fundamentals-part-1/index.html ) |
+| Foundations | JavaScript Basics - Fundamentals Part 2 | [📝 Fundamentals Part 2](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/fundamentals-part-2/index.html ) |
 
 ***
 
@@ -760,5 +762,225 @@ div, p {
 
 > Space around will distribute all elements evenly using all the available space.<br>
 > Space between will distribute all elements using all the available space towards the center, with items on both start and end.
+
+***
+
+# Fundamentals Part 1
+
+***
+### Name the three ways to declare a variable
+
+> `var name` , `let name` & `const name` in non strict environments, just declaring a name will work `name`.
+
+***
+### Which of the three variable declarations should you avoid and why?
+
+> The `var` because it's the old way to declaring variables and it may behave unexpectedly.
+
+***
+### What rules should you follow when naming variables?
+
+> Giving the variables meaningful names, avoid generic or random short names.<br>
+> A good variable name helps readability and understanding the code better.
+
+***
+### What happens when you add numbers and strings together?
+
+> Both operands will be converted to string, no matter the order.
+
+***
+### How does the Modulo (%), or Remainder, operator work?
+
+> It will return the value which reminds after a division with the given operand on the left side.
+
+***
+### Explain the difference between == and ===.
+
+> The strict comparator `===`, will also evaluate the object type as well, while the "normal" `== ` operator will only evaluate it's value.
+
+***
+### When would you receive a NaN result?
+
+> When the conversion is impossible, the result will be NaN (not a number)
+
+***
+### How do you increment and decrement a number?
+
+> You can use the `++` & `--` operators to increment or decrement one. Or if you prefer to use a certain amount  `+= amount` & `-= amount`
+
+***
+### Explain the difference between prefixing and postfixing increment/decrement operators.
+
+> The pre-fixing `++num --num` will return the value *after* the operation was done.<br>
+> The post-fixing `num++ num--` will return the value *before* the operation was completed.
+
+***
+### What is operator precedence and how is it handled in JS?
+
+> Each operator has a precedence index value, which help JS evaluate which operations to do first.
+> When the precedence is the same, the operation in done from left to right.
+
+***
+### How do you access developer tools and the console?
+
+> Opening the Inspector option after right click. Then opening the "Console" tab on the developers tools menu.
+
+***
+### How do you log information to the console?
+
+> `console.log(arguments, ...);`
+
+***
+### What does unary plus operator do to string representations of integers? eg. +”10”
+
+> It will cast the string to a base 10 number value, it will assume the Number type.
+
+***
+# Fundamentals Part 2
+
+***
+### What are the eight data types in JavaScript?
+
+> `Number`, `BigInt`, `String`, `null`, `undefined`, `boolean`, `Objects` & `Symbols`
+
+***
+### Which data type is NOT primitive?
+
+> `Objects` & `Symbols`
+
+***
+### What is the relationship between null and undefined?
+
+> `null` & `undefined` are both falsy, they both indicate absence of a value, but in different contexts.<br>
+> `null` indicates that a value is empty or unknown.<br>
+> `undefined` indicates an uninitialized value not yet assigned.
+
+***
+### What is the difference between single, double, and backtick quotes for strings?
+
+> Single and double quotes are essentially the same thing.<br>
+> With backtick you can embed strings inside, and declare multi-line strings.<br>
+
+***
+### What is the term for joining strings together?
+
+> "concatenation"
+
+***
+### Which type of quote lets you embed variables/expressions in a string?
+
+> Backtick quotes.
+
+***
+### How do you embed variables/expressions in a string?
+
+> Using: `${...}`
+
+***
+### How do you use escape characters in a string?
+
+> Sometimes you want some characters to be consider text not special code characters like " or '.<br>
+> Use a backslash before the character to indicate they should be considered as text: ```"Quotes: (\") are fun!"```
+
+***
+### What is the difference between the slice/substring/substr string methods?
+
+> Slice will take as parameters the start and end of the string which will be extracted and returned.<br>
+> Substring behaves just like slice, but any value < 0 will be considered as zero.<br>
+> Substr will take as arguments the start of the string and the length of the string to be extracted.<br>
+> Any of these methods when only one parameter is given, will return the string, sliced, up until the last character.
+
+***
+### What are the three logical operators, and what do they stand for?
+
+> OR `||`, AND `&&` & NOT `!`
+
+***
+### What are the comparison operators?
+
+> `>` greater than, `<` lower than, `==` equals & `!=` different<br>
+> You can also combine the first two with the third:<br>
+> - `>=` greater or equals than<br>
+> - `<=` lower or equals than
+
+***
+### What are truthy and falsy values?
+
+> It the overall result of the evaluation of an expression. They represent the boolean True & False.
+
+***
+### What are the falsy values in JavaScript?
+
+> These are values that will evaluate to false. `null`, `undefined`, `""` (empty string), `NaN` & 0.
+
+***
+### What are conditionals?
+
+> This are evaluations which control the flow of our code. Depending on the result something can or cannot happen.
+> There are keywords to simplify and improve readability on the code => `if`, `else`, `else if`, `?`, `:`, `switch` & `case`.
+
+***
+### What is the syntax for an if/else conditional?
+
+>
+```js
+if (boolean resulting expression) {
+  console.log("This will execute when true");
+} else {
+  console.log("This will execute when false");
+}
+```
+
+***
+### What is the syntax for a switch statement?
+
+>
+```js
+switch (value) {
+  case (expression to be compared with ===):
+    console.log("Executed when the case is true");
+    [break];
+  default:
+   console.log("The default statement");
+}
+```
+***
+### What is the syntax for a ternary operator?
+
+>
+```js
+let val = (expression) ? "return this when expression true" : "This value when false";
+```
+
+***
+### What is nesting?
+
+> It's when you put conditions inside other conditions. Which is perfectly OK!
+
+***
+
+# JavaScript Developer Tools
+
+***
+### How do you open developer tools?
+
+> From the Chrome Menu > More Tools > Developer Tools<br>
+> You can also right click and go to Inspect.<br>
+> Use the keyboard shortcut F12 or Ctrl + Shift + C (Mac: Opt + Cmd
+
+***
+### How do you change screen size of a website using developer tools?
+
+> Click Toggle Device Toolbar on the developer tools menu. You can choose a device view port or resize responsively. 
+
+***
+### What is a breakpoint?
+
+> It is a tool that helps you debug your code, by setting a position where the code will stop (pause).
+
+***
+### How do you set a breakpoint?
+
+> By opening the menu Event Listener Breakpoints, or by clicking on the line left side. 
 
 ***

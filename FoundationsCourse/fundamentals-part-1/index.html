@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <title>Fundamentals Part 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <style type="text/css">
+  body {
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: floralwhite;
+  }
+  .lg-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .md-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .sm-container {
+    max-width: 200px;
+  }
+  .sm-container hr {
+    margin: 0;
+    padding: 0;
+  }
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sm-container a:hover h3 {
+    background-color: white;
+  }
+  a {
+    text-decoration: none;
+    color: gray;
+  }
+  .sm-container a h3 {
+    padding: 0.5rem;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0.1rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="flex-between">
+  <span></span>
+  <div>
+    <hr>
+    <a href="../fundamentals-part-2/index.html"><h3>⇨ Fundamentals Part 2</h3></a>
+    <hr>
+  </div>
+</div>
+<hr>
+<div class="md-container">
+  <h1>Fundamentals Part 1</h1>
+  <h4>The snippet bellow is the solution to the problems.</h4>
+  <h5>Open the console to see the results</h5>
+</div>
+<hr>
+<pre class="lg-container"><code class="language-js">
+/**
+* 1 - Add 2 numbers together! (just type console.log(23 + 97) into your html file)
+* 
+* 2 - Add a sequence of 6 different numbers together.
+* 
+* 3 - Print the solution to the following equation: (4 + 6 + 9) / 77
+*     Answer should be approximately 0.24675
+* 
+* 4 - Let’s use variables!
+*     Type this statement at the top of the script tag: let a = 10
+*     In the console console.log(a) should print 10
+*     Try the following in the console: 9 * a
+*     and this: let b = 7 * a (returns undefined *) and then console.log(b)
+* 
+* 5 - You should be getting the hang of this by now… try this sequence:
+*     Declare a constant variable max with the value 57
+*     Set another variable actual to max - 13
+*     Set another variable percentage to actual / max
+*     If you type percentage in the console and press Enter you should see a value like 0.7719
+* 
+* 6 - Take a few minutes to keep playing around with various things in your script tag.
+*     Eventually, we will learn how to actually make those numbers and things show up on the webpage, but all of this logic will remain the same, so make sure you’re comfortable with it before moving on.
+**/
+
+// (1)
+console.log("Ex: 1 - Add 2 numbers together!");
+let num1 = Math.random(10) * 10;
+let num2 = Math.random(10) * 10;
+console.log(num1, num2, "Result:", num1 + num2);
+
+// (2)
+console.log("Ex: 2 - Add a sequence of 6 different numbers together!");
+let seqNum1 = 0;
+let seqNum2 = 4;
+let seqNum3 = 5;
+let seqNum4 = 90;
+let seqNum5 = 9;
+let seqNum6 = -42;
+console.log(seqNum1, seqNum2,  seqNum3,  seqNum4,  seqNum5,  seqNum6);
+console.log(seqNum1 + seqNum2 + seqNum3 + seqNum4 + seqNum5 + seqNum6);
+
+// (3)
+console.log("Ex: 3 - Print the solution to the following equation: (4 + 6 + 9) / 77");
+console.log((4 + 6 + 9) / 77);
+
+// (4)
+console.log("Ex: 4 - Let's use variables!");
+let a = 10;
+console.log(a);
+
+// (5)
+console.log("Ex: 5 - You should be getting the hang of this by now…");
+const max = 57;
+let actual = max - 13;
+let percentage = actual / max;
+console.log("Percentage:", percentage);
+</code></pre>
+<hr>
+<div class="lg-container">
+  <h6>with ❤️ by <a href="https://github.com/pulgamecanica?tab=repositories">pulgamecanica</a></h6>
+</div>
+<hr>
+<script type="text/javascript">
+/**
+ * 1 - Add 2 numbers together! (just type console.log(23 + 97) into your html file)
+ * 
+ * 2 - Add a sequence of 6 different numbers together.
+ * 
+ * 3 - Print the solution to the following equation: (4 + 6 + 9) / 77
+ *     Answer should be approximately 0.24675
+ * 
+ * 4 - Let’s use variables!
+ *     Type this statement at the top of the script tag: let a = 10
+ *     In the console console.log(a) should print 10
+ *     Try the following in the console: 9 * a
+ *     and this: let b = 7 * a (returns undefined *) and then console.log(b)
+ * 
+ * 5 - You should be getting the hang of this by now… try this sequence:
+ *     Declare a constant variable max with the value 57
+ *     Set another variable actual to max - 13
+ *     Set another variable percentage to actual / max
+ *     If you type percentage in the console and press Enter you should see a value like 0.7719
+ * 
+ * 6 - Take a few minutes to keep playing around with various things in your script tag.
+ *     Eventually, we will learn how to actually make those numbers and things show up on the webpage, but all of this logic will remain the same, so make sure you’re comfortable with it before moving on.
+ **/
+
+// (1)
+console.log("Ex: 1 - Add 2 numbers together!");
+let num1 = Math.random(10) * 10;
+let num2 = Math.random(10) * 10;
+console.log(num1, num2, "Result:", num1 + num2);
+
+// (2)
+console.log("Ex: 2 - Add a sequence of 6 different numbers together!");
+let seqNum1 = 0;
+let seqNum2 = 4;
+let seqNum3 = 5;
+let seqNum4 = 90;
+let seqNum5 = 9;
+let seqNum6 = -42;
+console.log(seqNum1, seqNum2,  seqNum3,  seqNum4,  seqNum5,  seqNum6);
+console.log(seqNum1 + seqNum2 + seqNum3 + seqNum4 + seqNum5 + seqNum6);
+
+// (3)
+console.log("Ex: 3 - Print the solution to the following equation: (4 + 6 + 9) / 77");
+console.log((4 + 6 + 9) / 77);
+
+// (4)
+console.log("Ex: 4 - Let's use variables!");
+let a = 10;
+console.log(a);
+
+// (5)
+console.log("Ex: 5 - You should be getting the hang of this by now…");
+const max = 57;
+let actual = max - 13;
+let percentage = actual / max;
+console.log("Percentage:", percentage);
+</script>
+</body>
+</html>

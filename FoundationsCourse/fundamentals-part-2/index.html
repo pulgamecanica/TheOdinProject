@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fundamentals Part 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+<style type="text/css">
+  body {
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: floralwhite;
+  }
+  .lg-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .md-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .sm-container {
+    max-width: 200px;
+  }
+  .sm-container hr {
+    margin: 0;
+    padding: 0;
+  }
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sm-container a:hover h3 {
+    background-color: white;
+  }
+  a {
+    text-decoration: none;
+    color: gray;
+  }
+  .sm-container a h3 {
+    padding: 0.5rem;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0.1rem;
+    text-align: center;
+  }
+</style>
+<body>
+<div class="flex-between">
+  <div class="sm-container">
+    <a href="#exercise-1"><h3>🛠️ Exercise 1</h3></a>
+    <hr>
+    <a href="#exercise-2"><h3>⁉️ Exercise 2</h3></a>
+    <hr>
+    <a href="#exercise-3"><h3>🧮 Exercise 3</h3></a>
+    <hr>
+    <a href="#exercise-4"><h3>⛓️ Exercise 4</h3></a>
+  </div>
+  <div>
+    <hr>
+    <a href="../fundamentals-part-1/index.html"><h3>⇦ Fundamentals Part 1</h3></a>
+    <hr>
+  </div>
+</div>
+<hr style="margin-top: 0;">
+<div class="md-container" id="exercise-1">
+  <h1>Exercise 1</h1>
+  <h4>In this exercise, you will be working out of the file called <a href="https://replit.com/@OdinProject/troubleshooting#troubleshooting.js">troubleshooting.js</a></h4>
+  <hr>
+</div>
+<pre class="lg-container"><code class="language-js">
+/**
+ * ===== Troubleshooting =====
+ * The function below should log the number 2, however it does not, 
+ * see if you can fix it!
+ * Be sure to fix it in the spirit of the code, do not hard code the result.
+ */
+
+function troubleshooting() {
+  const a = 1;
+  const b = 1;
+
+  let result;
+
+  // Edit between these lines
+  // =================================
+  result = "a" + "b";
+
+  // =================================
+
+  return result;
+}
+
+// Do not change this 
+module.exports = troubleshooting;
+</code></pre>
+<div class="md-container">
+  <hr>
+  <h2>Solution</h2>
+  <h5>Remove the quotes from the result assignment.</h5>
+  <hr>
+</div>
+<pre class="lg-container"><code class="language-js">
+function troubleshooting() {
+  const a = 1;
+  const b = 1;
+  let result;
+
+  result = a + b;
+  return result;
+}
+</code></pre>
+<hr>
+<div class="md-container" id="exercise-2">
+  <h1>Exercise 2</h1>
+  <h4>You will be working out of <a href="https://replit.com/@OdinProject/enter-a-number#script.js">script.js</a>, and you will use the console in the ‘webview’ pane to check your work. To access the console, click the wrench icon, which is located on the right side of the address bar within the ‘webview’ pane.</h4>
+  <hr>
+</div>
+<pre class="lg-container"><code class="language-js">
+/**
+ * The code below tells the browser to ask you for a number
+ * then if that number is `6`, it returns `true` otherwise it returns `false`
+ * 
+ * Change this code so it returns `true` when the number is greater than or equal to 10, and false if it is less than 10
+ */
+
+number = Number(prompt("enter a number"));
+
+function numberChecker() {
+  if(number === 6) {
+    return true;
+  } else {
+    return false;
+  }
+}
+</code></pre>
+<div class="md-container">
+  <hr>
+  <h2>Solution</h2>
+  <h5>Change the expression to greater or equals than 10</h5>
+  <hr>
+</div>
+<pre class="lg-container"><code class="language-js">
+number = Number(prompt("enter a number"));
+
+function numberChecker() {
+  if(number >= 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
+</code></pre>
+<hr>
+<div class="md-container" id="exercise-3">
+  <h1>Exercise 3</h1>
+  <h4>You will be working out of <a href="https://replit.com/@OdinProject/lets-do-some-math#math.js">math.js</a></h4>
+  <hr>
+</div>
+<pre class="lg-container"><code class="language-js">
+/**
+ * Lets do some math!
+ * Some rules first:
+ *   - Replace the strings to the right of the = with the math expression they describe.
+ *   - Do not manually enter the answers to the equations. For example, `const a = 9` would be incorrect as 9 is the answer to the equation you're being asked to write out
+ */
+
+const a = "one plus eight"
+const b = "22 times three"
+const c = "the *remainder* of 5/4"
+const d = "the variable 'a' minus 17"
+const e = "the sum of the previous four variables"
+
+module.exports = {a, b, c, d, e}
+</code></pre>
+<div class="md-container">
+  <hr>
+  <h2>Solution</h2>
+  <h5>Replace everything correctly.</h5>
+  <hr>
+</div>
+<pre class="lg-container"><code class="language-js">
+const a = 1 + 8;
+const b = 22 * 3
+const c = 5 % 4;
+const d = a - 17;
+const e = a + b + c + d;
+</code></pre>
+<hr>
+<div class="md-container" id="exercise-4">
+  <h1>Exercise 4</h1>
+  <h4>You will be working out of <a href="https://replit.com/@OdinProject/direction-follow#follow.js">follow.js</a></h4>
+  <hr>
+</div>
+<pre class="lg-container"><code class="language-js">
+/**
+- After each step, run the code to make sure your code still works! 
+
+- If your code fails to run, or you see a "ReferenceError" in the console, review your code and make sure you have completed all of the objectives.
+  
+- Don't forget you can put "console.log" anywhere to see what your values are at any time.
+  
+  ===== Step 1: =====
+  Look at the code below and make a prediction of what the output will be. 
+  
+  After making your prediction, press 'Run' at the top and look at the output in the console. If you were surprised by anything, go back and look at the code to see what's going on.
+
+*/
+
+// code to be deleted
+const birthYear = 1948;
+const thisYear = 1965;
+const firstName = "Carlos";
+const lastName = "Stevenson";
+
+const greeting = "Hello! My name is " + firstName + " " + lastName + " and I am " + (thisYear - birthYear) + " years old.";
+
+console.log(greeting);
+</code></pre>
+<br>
+<pre class="lg-container"><code class="language-js">
+/*
+
+  ===== Step 2: =====
+  Once you understand the code snippet above, delete it. Then, using the following instructions, recreate the snippet on your own under "Your code goes here".
+  
+  ---------------------------------------------------------------
+  
+  1. Create 4 variables: firstName, lastName, thisYear, and birthYear
+
+  2. Create a 5th variable, greeting, that is constructed from the previous 4
+  (it should contain a greeting with the person's full name and their age)
+
+  3. Print greeting with console.log
+
+  4. Press 'Run' to ensure your code works
+  
+  ---------------------------------------------------------------
+
+  ===== NOTE =====
+  In order to make the tests pass you will need to use these exact values. The wording also needs to be an exact match. If the tests fail, check spacing, capitalization, and punctuation:
+  
+  birth year = 1948
+  this year = 1965
+  first name = Carlos
+  last name = Stevenson
+
+  The greeting should say: "Hello! My name is Carlos Stevenson and I am 17 years old."
+
+*/
+
+//===== Your code goes here =================
+</code></pre>
+<br>
+<pre class="lg-container"><code class="language-js">
+/*
+
+  ===== Step 3: =====
+  Now that you have the code working again, let's go back over it and, using the instructions below, edit it to make it easier to read.
+
+  ---------------------------------------------------------------
+
+  1. Go to "Testing your code" below
+
+  2. Comment out the lines under "Test Step 2"
+
+  3. Uncomment the lines under "Test Step 3" (Notice the difference between them)
+
+  4. Go back to your code and create 2 new variables: "fullName" and "age"
+
+  Do NOT simply type the full name and age into the new variables. Set them using the pre-existing variables, with the calculations that are currently inside of greeting.
+
+  5. Edit the greeting string to use fullName and age instead of the other 4 variables. (the greeting should then look something like: "Hello! My name is " + fullName)
+
+  6. Press 'Run' to ensure your code still works (output should be unchanged)
+
+  ---------------------------------------------------------------
+
+  ===== Testing your code =====
+  - Do NOT edit this section until told to do so. 
+
+  - Make sure one and only one of these test steps are commented out at a time
+
+*/
+
+// Test Step 2: 
+
+module.exports = {
+  testGroup: "a",
+  greeting,
+  birthYear,
+  thisYear,
+  firstName,
+  lastName
+}
+
+
+// Test Step 3: (Don't forget to comment out lines under Test Step 2)
+
+// module.exports = {
+//  testGroup: "b",
+//  greeting,
+//  birthYear,
+//  thisYear,
+//  firstName,
+//  lastName,
+//  fullName,
+//  age
+// }
+</code></pre>
+<div class="md-container">
+  <hr>
+  <h2>Solution</h2>
+  <h5>Solution</h5>
+  <hr>
+</div>
+<pre class="lg-container"><code class="language-js">
+let birthYear = 1948;
+let thisYear =  1965;
+let lastName = "Stevenson";
+let firstName = "Carlos";
+let greeting = `Hello! My name is ${firstName} ${lastName} and I am ${thisYear - birthYear} years old.`;
+console.log(greeting);
+let fullName = firstName.concat(" ", lastName);
+let age = thisYear - birthYear;
+console.log("Hello! My name is " + fullName + " and I am " + age + " years old.");
+</code></pre>
+<hr>
+<div class="lg-container">
+  <h6>with ❤️ by <a href="https://github.com/pulgamecanica?tab=repositories">pulgamecanica</a></h6>
+</div>
+<hr>
+<script type="text/javascript">
+let birthYear = 1948;
+let thisYear =  1965;
+let lastName = "Stevenson";
+let firstName = "Carlos";
+let greeting = `Hello! My name is ${firstName} ${lastName} and I am ${thisYear - birthYear} years old.`;
+console.log(greeting);
+let fullName = firstName.concat(" ", lastName);
+let age = thisYear - birthYear;
+console.log("Hello! My name is " + fullName + " and I am " + age + " years old.");
+</script>
+</body>
+</html>

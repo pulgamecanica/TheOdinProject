@@ -25,9 +25,9 @@
 | Foundations | Alignment - flex modal | [⚠️ flex modal](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/05-flex-modal/index.html) |
 | Foundations | Alignment - flex layout | [🧮 felx layout](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/06-flex-layout/index.html) |
 | Foundations | Alignment - flex layout-2 | [🧮 felx layout 2](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/07-flex-layout-2/index.html) |
-| Foundations | Flexbox - Project: Landing Page | [👒📟👨‍💻 One Piece Landing Page](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/landing-page/index.html) |
-| Foundations | JavaScript Basics - Fundamentals Part 1 | [📝 Fundamentals Part 1](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/fundamentals-part-1/index.html ) |
-| Foundations | JavaScript Basics - Fundamentals Part 2 | [📝 Fundamentals Part 2](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/fundamentals-part-2/index.html ) |
+| Foundations | Flexbox - Project: Landing Page | [👒📟👨‍💻 One Piece landing page](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/landing-page/index.html) |
+| Foundations | JavaScript Basics - fundamentals part-1 | [📝 fundamentals part 1](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/fundamentals-part-1/index.html ) |
+| Foundations | JavaScript Basics - fundamentals part-2 | [📝 fundamentals part 2](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/fundamentals-part-2/index.html ) |
 
 ***
 

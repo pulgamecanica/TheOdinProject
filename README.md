@@ -28,6 +28,10 @@
 | Foundations | Flexbox - Project: Landing Page | [👒📟👨‍💻 One Piece landing page](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/landing-page/index.html) |
 | Foundations | JavaScript Basics - fundamentals part-1 | [📝 fundamentals part 1](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/fundamentals-part-1/index.html ) |
 | Foundations | JavaScript Basics - fundamentals part-2 | [📝 fundamentals part 2](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/fundamentals-part-2/index.html ) |
+| Foundations | JavaScript Basics - fundamentals part-3 | [📝 fundamentals part 3](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/fundamentals-part-3/index.html ) |
+| Foundations | JavaScript Basics - problem solving | [🟰 problem-solving](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/problem-solving/index.html ) |
+| Foundations | JavaScript Baiscs - Project: Rock Paper Scissors | [🪨🧻✂️ rock paper scissors](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/rock-paper-scissors/index.html ) |
+
 
 ***
 
@@ -982,5 +986,121 @@ let val = (expression) ? "return this when expression true" : "This value when f
 ### How do you set a breakpoint?
 
 > By opening the menu Event Listener Breakpoints, or by clicking on the line left side. 
+
+***
+
+# Fundamentals Part 3
+
+***
+### What are functions useful for?
+
+> To reuse blocks of code and to modularize our programs, making them more readable and less repetitive.
+
+***
+### How do you invoke a function?
+
+> By calling it's name, followed by parenthesis `()` you can provide arguments if needed, separated by comas..
+
+***
+### What are anonymous functions?
+
+> This are functions without names, useful when you need to pass a function as an argument.<br>
+>
+```js
+function thisFunctionTakesAFunctionAsParameter(myCustomFunction) {
+  myCustomFunction();
+}
+thisFunctionTakesAFunctionAsParameter(function () { alert("HelloWorld") });
+```
+
+***
+### What is function scope?
+
+> This is the block where your local variables will be available. A scope is defined with brackets `{ ...scope...}`.
+
+***
+### What are return values?
+
+> It's the value which a function returns, it's defined with the `return` keyword followed bby the value to be returned.
+
+***
+### What are arrow functions?
+
+> It's another way to create functions, useful to define a one-line function, since it doesn't need an explicit return when it's only one line.<br>
+> They are defined like so:<br>
+>
+```js
+(value) => value;
+```
+> Which can translate to<br>
+>
+```js
+(function (value) {
+  return (value);
+});
+```
+> Arrow functions can also define a scope, but in those cases it's common to loose their ability to implicitly return, because it would have more than one line.
+
+***
+
+# Problem Solving
+
+***
+
+### What are the three stages in the problem solving process?
+
+> Identifying the input, Visualizing the output, suggesting a pseudocode with your logic.
+
+***
+### Why is it important to clearly understand the problem first?
+
+> In order to identify which variables you are going to need. And how you can solve the problem in the most effective way.
+
+***
+### What can you do to help get a clearer understanding of the problem?
+
+> Divide and conquest. Divide the problem into smaller tasks.
+
+***
+### What are some of the things you should do in the planning stage of the problem solving process?
+
+> Pseudo Code. 
+
+***
+### What is an algorithm?
+
+> It's the steps which a program will take when solving a problem. This steps might vary on conditions.
+
+***
+### What is pseudocode?
+
+> It's the code but in written language, in order to explain the code in a more "familiar" way.
+
+***
+### What are the advantages of breaking a problem down and solving the smaller problems?
+
+> It's easier to solve small problems instead of bigger problems.
+
+***
+
+# Understanding Errors
+
+***
+
+### What are three reasons why you may see a TypeError?
+
+> ReferenceError, it happens when you try to reference (use, invoke) something which is not known to the program.<br>
+> SyntaxError, when you type something that doesn't exists on the ECMA syntax rules.<br>
+> TypeError, it's when you try to reference something that doesn't belong to that type (incompatible).
+
+***
+### What is the key difference between an error and a warning?
+
+> Errors stop the execution of your program, while warning only point out that something might not be ok.
+
+***
+### What is one method you can use to resolve an error?
+
+> Explore the error trace, use the developer's tools, place console.trace or console.log on your code; etc.
 
 ***

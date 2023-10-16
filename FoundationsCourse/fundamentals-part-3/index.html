@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fundamentals Part 3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+<style type="text/css">
+  body {
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: floralwhite;
+  }
+  .lg-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .md-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .sm-container {
+    max-width: 200px;
+  }
+  .sm-container hr {
+    margin: 0;
+    padding: 0;
+  }
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .sm-container a:hover h3 {
+    background-color: white;
+  }
+  a {
+    text-decoration: none;
+    color: gray;
+  }
+  .max-50 {
+    max-width: 50vw !important;
+  }
+  .sm-container a h3 {
+    padding: 0.5rem;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0.1rem;
+    text-align: center;
+  }
+</style>
+<body>
+<div class="flex-between">
+  <div class="sm-container">
+    <a href="#exercise-1"><h3>🐅 Favourite Animal 🐐</h3></a>
+  </div>
+  <div class="max-50">
+    <hr>
+    <a href="../fundamentals-part-2/index.html"><h3>⇦ Fundamentals Part 2</h3></a>
+    <hr>
+    <a href="../problem-solving/index.html"><h3>⇨ Problem Solving</h3></a>
+    <hr>
+  </div>
+</div>
+<hr style="margin-top: 0;">
+<div class="md-container" id="exercise-1">
+  <h1>Favorite Animal 1</h1>
+  <h4>Let’s discuss parameters and arguments in the context of the following example function:</h4>
+  <hr>
+</div>
+<pre class="lg-container"><code class="language-js">function favoriteAnimal(animal) {
+  return animal + " is my favorite animal!"
+}
+
+console.log(favoriteAnimal("Goat"))
+</code></pre>
+<div class="md-container">
+  <hr>
+  <h2>Examples</h2>
+  <h5>I tried  the following examples:</h5>
+  <hr>
+</div>
+<pre class="lg-container"><code class="language-js">console.log(favoriteAnimal("cheetah"))
+</code></pre>
+<hr>
+<div class="md-container" id="exercise-2">
+  <h1>Assignment</h1>
+  <h4>Let’s write some functions! Write these in the script tag of a skeleton HTML file. If you’ve forgotten how to set it up, review the instructions from <a href="../fundamentals-part-1/index.html">Fundamentals Part 1</a>.</h4>
+  <hr>
+</div>
+<pre class="lg-container"><code class="language-js">/**
+ * 1 - Write a function called add7 that takes one number and returns that number + 7.
+ * 2 - Write a function called multiply that takes 2 numbers and returns their product.
+ * 3 - Write a function called capitalize that takes a string and returns that string with only the first letter capitalized
+ *     Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+ * 4 - Write a function called lastLetter that takes a string and returns the very last letter of that string:
+ *     lastLetter("abcd") should return "d"
+ */
+</code></pre>
+<div class="md-container">
+  <hr>
+  <h2>Solution</h2>
+  <h5>Description</h5>
+  <hr>
+</div>
+<pre class="lg-container"><code class="language-js">/* Assignment */
+
+// (1)
+function add7(number) {
+  return (number + 7);
+}
+console.log(add7(-42));
+console.log(add7(0));
+console.log(add7(42));
+
+// (2)
+function multiply(num1, num2) {
+  return (num1 * num2);
+}
+console.log(multiply(42, 42));
+console.log(multiply(5, "" + 2));
+console.log(multiply(NaN, -42));
+
+// (3)
+function capitalize(str) {
+  let firstLetterCapitalized;
+
+  firstLetterCapitalized = str[0].toUpperCase();
+  return (firstLetterCapitalized + str.substr(1));
+}
+let str = "hello Mama! i need to go home.";
+console.log(str, " => ", capitalize(str));
+str = "testing this out!"
+console.log(str, " => ", capitalize(str));
+
+// (4)
+function lastLetter(str) {
+  let lastIndex = str.length - 1;
+
+  return str[lastIndex];
+}
+console.log(lastLetter("abcd"));
+console.log(lastLetter("pulgamecanica"));
+</code></pre>
+<hr>
+<script type="text/javascript">
+{
+  // (Favorite Animal)
+  function favoriteAnimal(animal) {
+    return animal + " is my favorite animal!"
+  }
+
+  console.log(favoriteAnimal("Goat"))
+  console.log(favoriteAnimal("cheetah"))
+}
+{
+  /* Assignment */
+  // (1)
+  function add7(number) {
+    return (number + 7);
+  }
+  console.log(add7(-42));
+  console.log(add7(0));
+  console.log(add7(42));
+
+  // (2)
+  function multiply(num1, num2) {
+    return (num1 * num2);
+  }
+  console.log(multiply(42, 42));
+  console.log(multiply(5, "" + 2));
+  console.log(multiply(NaN, -42));
+
+  // (3)
+  function capitalize(str) {
+    let firstLetterCapitalized;
+
+    firstLetterCapitalized = str[0].toUpperCase();
+    return (firstLetterCapitalized + str.substr(1));
+  }
+  let str = "hello Mama! i need to go home.";
+  console.log(str, " => ", capitalize(str));
+  str = "testing this out!"
+  console.log(str, " => ", capitalize(str));
+
+  // (4)
+  function lastLetter(str) {
+    let lastIndex = str.length - 1;
+
+    return str[lastIndex];
+  }
+  console.log(lastLetter("abcd"));
+  console.log(lastLetter("pulgamecanica"));
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fundamentals Part 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+<style type="text/css">
+  body {
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: floralwhite;
+  }
+  .lg-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .md-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .sm-container {
+    max-width: 200px;
+  }
+  .sm-container hr {
+    margin: 0;
+    padding: 0;
+  }
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .sm-container a:hover h3 {
+    background-color: white;
+  }
+  a {
+    text-decoration: none;
+    color: gray;
+  }
+  .max-50 {
+    max-width: 50vw !important;
+  }
+  .sm-container a h3 {
+    padding: 0.5rem;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0.1rem;
+    text-align: center;
+  }
+  button {
+    margin: auto;
+    display: block;
+    background-color: navajowhite;
+    border-radius: 0.5rem;
+    border: 2px black solid;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: palevioletred;
+    cursor: pointer;
+  }
+  button:hover {
+    color: white;
+    background-color: #424242;;
+  }
+  #buzz,
+  #fizz {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+  #buzz {
+    background-image: url("./images/buzz.png");
+  }
+  #fizz {
+    background-image: url("./images/fizz.png");
+  }
+</style>
+<body>
+<div class="flex-between">
+  <div class="sm-container">
+    <a href="#exercise-1"><h3>🐅 FizzBuzz 🐐</h3></a>
+  </div>
+  <div class="max-50">
+    <hr>
+    <a href="../fundamentals-part-3/index.html"><h3>⇦ Fundamentals Part 3</h3></a>
+    <hr>
+  </div>
+</div>
+<hr style="margin-top: 0;">
+<div class="md-container" id="exercise-1">
+  <h1>FizzBuzz</h1>
+  <h4>Write a program that takes a user’s input and prints the numbers from one to the number the user entered. However, for multiples of three print Fizz instead of the number and for the multiples of five print Buzz. For numbers which are multiples of both three and five print FizzBuzz.</h4>
+  <hr>
+</div>
+<pre class="lg-container"><code class="language-js">let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+
+for (let i = 1; i <= answer; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
+</code></pre>
+<div class="md-container">
+  <hr>
+  <button onclick="playGame();"><h2>Play FizzBuzz</h2></button>
+  <hr>
+</div>
+
+<div class="md-container">
+  <h2 id=counter>42</h2>
+  <div class="flex-between">
+    <span><div id="fizz"></div></span>
+    <span><div id="buzz"></div></span>
+  </div>
+</div>
+
+<script type="text/javascript">
+// Prompt the user until answer is a valid number
+let answer;
+while (!answer) {
+  answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+}
+// Return the value of a FizzBuzz number
+function fizzBuzzValue(number) {
+  if (number % 3 === 0 && number % 5 === 0) {
+    return ("FizzBuzz");
+  } else if (number % 3 === 0) {
+    return ("Fizz");
+  } else if (number % 5 === 0) {
+    return "Buzz";
+  } else {
+    return number;
+  }
+}
+// Print the value for numbers starting from 0 up to answer
+for (let i = 1; i <= answer; i++) {
+  console.log(fizzBuzzValue(i));
+}
+// Get Elements from the DOM tree
+const counterElem = document.getElementById("counter");
+const fizzElem = document.getElementById("fizz");
+const buzzElem = document.getElementById("buzz");
+
+function updateScreenNumber(number) {
+  counterElem.innerHTML = number;
+}
+function updateScreenFizz(show) {
+  fizzElem.style.display = show ? "block" : "none";
+}
+function updateScreenBuzz(show) {
+  buzzElem.style.display = show ? "block" : "none";
+}
+function updateScreen(number) {
+  switch (fizzBuzzValue(number)) {
+    case "Fizz":
+      updateScreenFizz(true);
+      updateScreenBuzz(false);
+      break ;
+    case "Buzz":
+      updateScreenBuzz(true);
+      updateScreenFizz(false);
+      break ;
+    case "FizzBuzz":
+      updateScreenFizz(true);
+      updateScreenBuzz(true);
+      break ;
+    default:
+      updateScreenFizz(false);
+      updateScreenBuzz(false);
+      break ;
+  }
+  updateScreenNumber(number);
+}
+function playGame(finishNumber = answer) {
+  console.log("Will playGame from 0 to", finishNumber);
+  for (let counter = 0; counter <= finishNumber; ++counter) {
+    setTimeout(function() {
+      updateScreen(counter);
+    }, 1000 * counter);
+  }
+  console.log("Finished Game! :D");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+FoundationsCourse/package-lock.json
+FoundationsCourse/node_modules
+FoundationsCourse/node_modules/*
+
+package-lock.json

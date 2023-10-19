@@ -1104,3 +1104,86 @@ thisFunctionTakesAFunctionAsParameter(function () { alert("HelloWorld") });
 > Explore the error trace, use the developer's tools, place console.trace or console.log on your code; etc.
 
 ***
+
+# Clean Code
+
+***
+
+### Why is it important to write clean code?
+
+> Because many times you will be reading code, from yourself or others. Clean code is more readable.
+
+***
+### Name 5 clean code principles previously mentioned
+
+> Keep consistency. <br>
+> Avoid redundant comments <br>
+> Many times, comments can be omited if your code is self descriptive and intuitive <br>
+> Avoid single character variables and functions. Variables should be nouns, while functions should start with verbs<br>
+> Keep your code indented, and cut lines when they exceed 80 characters
+
+***
+### What is the difference between good comments and bad comments?
+
+> Good Comments explain Why, Bad comments usually are unnecessary, explaining the How, or are useless overall in the context.
+
+***
+
+# Fundamentals Part 4
+
+***
+
+### What is an array?
+
+> It's a collection of data, you can access each element individually, or everything as a whole.
+
+***
+### What are arrays useful for?
+
+> To represent multiple elements of data. It is very useful to easily iterate through each element.
+
+***
+### How do you access an array element?
+
+> You can use `array[index]` to access an element at the index position.<br>
+> When the element is an array with named elements, then you can access the element as a property: `array.elementName`
+
+***
+### How do you change an array element?
+
+> You can assign it a new value with the `=` operator.
+
+***
+### What are some useful array properties?
+
+> `length` to know the size of the array.<br>
+
+***
+### What are some useful array methods?
+
+> `pop()` to return and delete the last element of the array.<br>
+> `push(element)` to add a new element to the array.<br>
+> `splice(n, m)` to remove `m` elements starting at position `n` without leaving blanks.
+> `concat(array)` to concatenate another array to the current array.
+
+***
+### What are loops useful for?
+
+> To iterate through collections of data.  This will help you avoid repetition.
+
+***
+### What is the break statement?
+
+> It will immediately exit the current running scope loop. 
+
+***
+### What is the continue statement?
+
+> It will  skip to the next iteration without evaluation the rest of the loop scope.
+
+***
+### What is the advantage of writing automated tests?
+
+> It will ensure that the code you wrote is doing exactly what you want it to do.
+
+***

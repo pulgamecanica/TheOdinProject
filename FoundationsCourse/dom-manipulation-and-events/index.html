@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dom Manipulation & Events</title>
+	<script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <style type="text/css">
+  body {
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: floralwhite;
+  }
+  .lg-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .md-container {
+  	text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .sm-container {
+    max-width: 200px;
+  }
+  .sm-container hr {
+    margin: 0;
+    padding: 0;
+  }
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sm-container a:hover h3 {
+    background-color: white;
+  }
+  a {
+    text-decoration: none;
+    color: gray;
+  }
+  .sm-container a h3 {
+    padding: 0.5rem;
+  }
+  .max-50 {
+    max-width: 50vw !important;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0.1rem;
+    text-align: center;
+  }
+  em {
+  	background-color: peachpuff;
+  	border-radius: 0.25rem 0.25rem 0 0;
+  	padding: 0.1rem 0.25rem;
+  }
+  button {
+  	background-color: #DAF7A6 ;
+  	border: 1px black solid;
+  	border-radius: 0.25rem;
+  	padding: 0.2rem 0.5rem;
+  	cursor: pointer;
+  	font-weight: bold;
+		box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  .left {
+  	text-align: left;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  li button {
+    margin-left: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="flex-between">
+  <div class="sm-container">
+    <a href="#dom-manipulation"><h3>🖹 Dom Manipulation</h3></a>
+    <hr>
+    <a href="#exercise-1"><h3>🪃 Exercise</h3></a>
+    <hr>
+    <a href="#events"><h3>🔔 Events</h3></a>
+    <hr>
+    <a href="#shopping-list-exercise"><h3>🛒 Shopping List Exercise</h3></a>
+  </div>
+  <div class="max-50">
+    <hr>
+    <a href="../problem-solving/index.html"><h3>⇦ Problem Solving</h3></a>
+    <hr>
+  </div>
+</div>
+<hr style="margin-top: 0;">
+<div class="md-container" id="dom-manipulation">
+  <h1>Dom Manipulation</h1>
+  <h3>Exercise Setup</h3>
+	<hr>
+</div>
+<pre class="lg-container"><em>index.html</em><code class="language-html">...
+&lt;script src="script.js" defer&gt;&lt;/script&gt;
+...
+&lt;div id="container"&gt;&lt;/div&gt;</code></pre>
+<br>
+<pre class="lg-container"><em>script.js</em><code class="language-js">const container = document.querySelector('#setup-container');
+
+const content = document.createElement('div');
+content.classList.add('content');
+content.textContent = 'This is the glorious text-content!';
+
+container.appendChild(content);</code></pre>
+<div class="md-container">
+	<hr>
+	<h3>Result</h3>
+	<div id="setup-container"></div>
+</div>
+<br>
+<hr>
+<div class="md-container" id="exercise-1">
+  <h1>Exercise</h1>
+  <hr>
+</div>
+<br>
+<pre class="lg-container"><code class="language-js">const container = document.querySelector('#container');
+
+const contentP = document.createElement('p');
+const contentH3 = document.createElement('h3');
+const contentDiv = document.createElement('div');
+
+contentP.textContent = 'Hey I’m red!';
+contentP.style.color = '#C70039';
+container.appendChild(contentP);
+
+contentH3.textContent = 'I’m a blue h3!';
+contentH3.style.color = '#1F51FF';
+container.appendChild(contentH3);
+
+contentDiv.style.border = '1px black solid';
+contentDiv.style.borderRadius = '0.25rem';
+{
+	const contentDivChildH1 = document.createElement('h1');
+	const contentDivChildP = document.createElement('p');
+
+	contentDivChildH1.textContent = 'I’m in a div';
+	contentDiv.appendChild(contentDivChildH1);
+
+	contentDivChildP.textContent = 'ME TOO!';
+	contentDiv.appendChild(contentDivChildP);
+}
+container.appendChild(contentDiv);
+</code></pre>
+<div class="md-container">
+	<hr>
+	<h3>Result</h3>
+	<div id="container"></div>
+</div>
+<hr>
+<div class="md-container" id="events">
+  <h1>Events</h1>
+  <h3>Discover the 3 ways setup events</h3>
+  <hr>
+</div>
+<pre class="lg-container"><em>index.html</em><code class="language-html">&lt;button onclick="alert('Hello World')"&gt;Click Me&lt;/button&gt;
+&lt;button id="btn2"&gt;Click Me&lt;/button&gt;
+&lt;button id="btn3"&gt;Click Me Too&lt;/button&gt;
+</code></pre>
+<br>
+<pre class="lg-container"><em>script.js</em><code class="language-js">const btn2 = document.querySelector('#btn2');
+btn2.onclick = () => alert("Hello World");
+
+const btn3 = document.querySelector('#btn3');
+btn3.addEventListener('click', () => {
+	alert("Hello World");
+});
+</code></pre>
+<div class="md-container">
+  <hr>
+  <h3>Result</h3>
+  <br>
+  <h4 class="left">1 - Inline Method</h4>
+	<h4 class="left">2 - JS Dynamic Assign to the onclick object property</h4>
+  <h4 class="left">3 - JS Dynamic Event Listener Setup</h4>
+  <br>
+  1 - <button onclick="alert('Hello World')">Click Me</button>
+  2 - <button id="btn2">Click Me</button>
+	3 - <button id="btn3">Click Me Too</button>
+</div>
+<hr>
+<div class="md-container" id="shopping-list-exercise">
+  <h1>My shopping list</h1>
+  <hr>
+</div>
+<pre class="lg-container"><em>index.html</em><code class="language-html">&lt;div&gt;
+  &lt;label for="item"&gt;Enter a new item:&lt;/label&gt;
+  &lt;input type="text" name="item" id="item"&gt;
+  &lt;button id="add-item-to-shopping-list-button"&gt;Add item&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;ul id="shopping-list"&gt;&lt;/ul&gt;
+</code></pre>
+<br>
+<pre class="lg-container"><em>script.js</em><code class="language-js">const shoppingListButton = document.querySelector('#add-item-to-shopping-list-button');
+const shoppingList = document.querySelector('#shopping-list');
+const shoppingItem = document.querySelector('#item');
+const getItemName = () => shoppingItem ? shoppingItem.value : '';
+const resetInput = () => shoppingItem.value = '';
+const createListItem = (itemName) => {
+  const listItem = document.createElement('li');
+  const span = document.createElement('span');
+  const button = document.createElement('button');
+
+  span.textContent = itemName;
+  button.textContent = 'Delete';
+  button.addEventListener('click', function () {
+    shoppingList.removeChild(listItem);
+  }, false);
+  listItem.appendChild(span);
+  listItem.appendChild(button);
+  return listItem;
+}
+function addCurrentItem() {
+  const listItem = createListItem(getItemName());
+
+  shoppingList.appendChild(listItem);
+  resetInput();
+  shoppingItem.focus();
+}
+shoppingListButton.addEventListener("click", addCurrentItem, false);
+</code></pre>
+<div class="md-container">
+  <hr>
+  <br>
+  <div>
+    <label for="item">Enter a new item:</label>
+    <input type="text" name="item" id="item">
+    <button id="add-item-to-shopping-list-button">Add item</button>
+  </div>
+
+  <ul id="shopping-list"></ul>
+</div>
+<hr>
+<div class="lg-container">
+  <h6>with ❤️ by <a href="https://github.com/pulgamecanica?tab=repositories">pulgamecanica</a></h6>
+</div>
+<hr>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

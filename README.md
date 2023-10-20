@@ -1187,3 +1187,101 @@ thisFunctionTakesAFunctionAsParameter(function () { alert("HelloWorld") });
 > It will ensure that the code you wrote is doing exactly what you want it to do.
 
 ***
+
+# DOM Manipulation and Events  
+
+***
+### What is the DOM?
+
+> Document Object Model<br>
+> It's a node tree which contains the structure of your HTML file.<br>
+> It also contains the properties and methods for each node.<br>
+> It is most useful when you are trying to modify your document elements
+
+***
+### How do you target the nodes you want to work with?
+
+> You can target elements by selecting them with a querySelector<br>
+> Using the same CSS rules set, `#` -> id, `.` -> id `name` -> html elements
+
+***
+### How do you create an element in the DOM?
+
+> You can create an element using the `selector.createElement("html element name");`
+
+***
+### How do you add an element to the DOM?
+
+> You can add elements created before to your page with the `appendChild` or `insertBefore` methods.
+
+***
+### How do you remove an element from the DOM?
+
+> Using the `removeChild` method
+
+***
+### How can you alter an element in the DOM?
+
+> By accessing it's properties or using the methods which change the property values.
+
+***
+### When adding text to a DOM element, should you use textContent or innerHTML? Why?
+
+> You should use textContent because it will create a text element for your desired content to be added.<br>
+> When ussing innerHTML the text is concidered as any other text would be treated on an HTML file.
+
+***
+### Where should you include your JavaScript tag in your HTML file when working with DOM nodes?
+
+> You should include it on the bottom of your html document or on your head section with the defer attribute.
+
+***
+### How do “events” and “listeners” work?
+
+> Events help you trigger callback function when an event occurs.
+
+***
+### What are three ways to use events in your code?
+
+> Inline onclick attribute in your html code structure.<br>
+> You can also assign a function to the `on[event]` prototype<br>
+> Using an eventListener to define the callback function which will be triggered on the event.
+
+***
+### Why are event listeners the preferred way to handle events?
+
+> Because event listeners are more consise and powerful.<br>
+> They allow you to define events using the same method `addEventListener` which is useful when setting multiple events.
+
+***
+### What are the benefits of using named functions in your listeners?
+
+> It make the code cleaner and clearer.
+
+***
+### How do you attach listeners to groups of nodes?
+
+> You can iterate through the `nodelist` returned by the `querySelectorAll` and use the event listener to bound an event to the node element.
+
+***
+### What is the difference between the return values of querySelector and querySelectorAll?
+
+> `returnSelector` returns a reference to the element target, while `querySelectorAll` returns a nodelist "collection" of all the nodes that matched the selector.
+
+***
+### What does a “nodelist” contain?
+
+> It contains the references to all your targets.
+
+***
+### Explain the difference between “capture” and “bubbling”.
+
+> Capture is the process that occurs when an event is triggered.<br>
+> Capture will recursively create a collection of all the nodes affected by the event.<br>
+> Bubbling is the process which happens when the event calls back the function on the even callBack.<br>
+> This process will occur recursively until the last node is reached.<br>
+> You can change the order on how this happen, to begin from the top most node or in the inner most node. <br>
+> You can stop the bubling from happening by using the stop propagation function:<br>
+> `(e) => e.stopPropagation();`
+
+***

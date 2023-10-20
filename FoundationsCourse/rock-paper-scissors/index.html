@@ -1,13 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>🪨🧻✂️Rock Paper Scissors</title>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body style="background-color: peachpuff;">
-  <center><h1>
-  Open the console to play.
-  </h1></center>
+<body>
+  <div class="around" id="themes"></div>
+  <center><h1>Make your choice</h1></center>
+  <div id="game-arena"></div>
+  <hr>
+  <center>
+    <h1 id="game-status"></h1>
+  </center>
+  <div class="curtain hidden" id="modal-container">
+    <div class="animate__animated animate__jackInTheBox modal">
+      <div class="icon icon-leaderboard icon-sm"></div>
+      <div class="col">
+        <div class="row between">
+          <div class="header" id="modal-tittle">Rock Paper Scissors</div>
+          <button class="close-button" onclick="toggleModal()">✖</button>
+        </div>
+        <div class="text">
+          <span class="rock">Rock</span> beats <span class="scissors">scissors</span><br>
+          <span class="paper">Paper</span> beats <span class="rock">rock</span><br>
+          <span class="scissors">Scissors</span> beat <span class="paper">paper</span><br>
+          <hr>
+        </div>
+        <div class="header">Leaderboard</div>
+        <div class="text">
+          Computer: <button id="computer-score-button">0</button><br>
+          Player: <button id="player-score-button">0</button><br>
+          Ties: <button id="ties-score-button">0</button>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="icon-leaderboard icon-md" id="button-leaderboard" onclick="toggleModal()"></button>
 </body>
 </html>

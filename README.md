@@ -31,7 +31,8 @@
 | Foundations | JavaScript Basics - fundamentals part-3 | [📝 fundamentals part 3](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/fundamentals-part-3/index.html ) |
 | Foundations | JavaScript Basics - problem solving | [🟰 problem-solving](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/problem-solving/index.html ) |
 | Foundations | JavaScript Baiscs - Project: Rock Paper Scissors | [🪨🧻✂️ rock paper scissors](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/rock-paper-scissors/index.html ) |
-
+| Foundations | JavaScript Baiscs - dom manipulation and events | [dom manipulation & events](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/dom-manipulation-and-events/index.html) |
+| Foundations | JavaScript Baiscs - etch a sketch | [etch-asketch](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/etch-a-sketch/index.html) |
 
 ***
 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Etch-a-sketch</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+<div id="canvas-area"></div>
+
+<div class="modal-container hidden">
+	<div class="modal">
+	  <div class="icon">!</div>
+	  <div class="col">
+	    <div class="row between">
+	      <div class="header">Change Canvas Size</div>
+	      <button class="close-button" onclick="toggleHidden()">✖</button>
+	    </div>
+	    <div class="text">This action is ireversible, the canvas will be cleaned after the canvas is resized.</div>
+	    <div class="text">The canvas size should be between 1 and 142.</div>
+	    <br>
+	    <div class="row">
+	    	<div class="col center">
+		    	<label for="canvas-input-width">WIDTH</label>
+		    	<input id="canvas-input-width" type="number" name="width" min="1" max="142" value="16">
+	    	</div>
+	    	<div class="col center">
+		    	<label for="canvas-input-height">HEIGHT</label>
+		    	<input id="canvas-input-height" type="number" name="height" min="1" max="142" value="16">
+	    	</div>
+	    </div>
+	    <div class="row errors">
+	    	<div class="col" id="error-width"></div>
+	    	<div class="col" id="error-height"></div>
+	    </div>
+	    <div class="row">
+	      <button class="continue" onclick="changeSize()">Continue</button>
+	      <button class="cancel" onclick="toggleHidden()">Cancel</button>
+	    </div>
+	  </div>
+	</div>
+</div>
+</body>
+</html>

@@ -31,8 +31,8 @@
 | Foundations | JavaScript Basics - fundamentals part-3 | [📝 fundamentals part 3](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/fundamentals-part-3/index.html ) |
 | Foundations | JavaScript Basics - problem solving | [🟰 problem-solving](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/problem-solving/index.html ) |
 | Foundations | JavaScript Baiscs - Project: Rock Paper Scissors | [🪨🧻✂️ rock paper scissors](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/rock-paper-scissors/index.html ) |
-| Foundations | JavaScript Baiscs - dom manipulation and events | [dom manipulation & events](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/dom-manipulation-and-events/index.html) |
-| Foundations | JavaScript Baiscs - etch a sketch | [etch-asketch](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/etch-a-sketch/index.html) |
+| Foundations | JavaScript Baiscs - dom manipulation and events | [🌲 dom manipulation & events](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/dom-manipulation-and-events/index.html) |
+| Foundations | JavaScript Baiscs - etch a sketch | [✏️ etch-asketch](https://pulgamecanica.github.io/TheOdinProject/FoundationsCourse/etch-a-sketch/index.html) |
 
 ***
 
@@ -1284,5 +1284,31 @@ thisFunctionTakesAFunctionAsParameter(function () { alert("HelloWorld") });
 > You can change the order on how this happen, to begin from the top most node or in the inner most node. <br>
 > You can stop the bubling from happening by using the stop propagation function:<br>
 > `(e) => e.stopPropagation();`
+
+***
+
+# Fundamentals Part 5
+
+***
+### What is the difference between objects and arrays?
+
+> Objects are a collection of properties with __Key__ : __Value__, while arrays is just a list with values.<br>
+> Besides objects have many more useful properties like, delete or the `for ... in ...` loop iteration.
+
+***
+### How do you access object properties?
+
+> You can use the dot notation or square brackets with the property name.<br>
+> Use the keyword `in` to verify if the property exists.
+
+***
+### What is Array.prototype.map() useful for?
+
+> It is useful to iterate and return a modified collection, based on the original in a single line.
+
+***
+### What is Array.prototype.reduce() useful for?
+
+> It can help you count anything inside a collection.
 
 ***

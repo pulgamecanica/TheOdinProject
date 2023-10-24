@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "SyneMono-Regular";
+  src:
+    local("SyneMono-Regular"),
+    url("./fonts/SyneMono-Regular.ttf") format("truetype");
+}
+* {
+	box-sizing: border-box;
+	color: white;
+  font-family: 'SyneMono-Regular', monospace, sans-serif;
+}
+body {
+  font-family: 'SyneMono-Regular', monospace, sans-serif;
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#curtain {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(42, 42, 42, 0.42), rgba(255, 255, 255, 0.3));
+}
+#calculator-container {
+	height: 600px;
+	width: 800px;
+	overflow-x: scroll;
+	overflow-y: scroll;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: url("./images/cowboyBebopPhone.png");
+	position: relative;
+	overflow: hidden;
+/*	border: 2px white solid;*/
+}
+#keyboard {
+	position: absolute;
+	top: 330px;
+	left: 295px;
+	transform: perspective(125cm) rotateX(25deg) rotateY(10deg) rotateZ(-10deg);
+}
+.row {
+	display: flex;
+}
+.row.between {
+	justify-content: space-between;
+}
+#keyboard .row {
+	gap: 23px;
+	width: 100%;
+	height: 28px;
+	margin: 1rem;
+}
+.col {
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	cursor: pointer;
+	border-radius: 0.3rem;
+	padding: 4px 3px;
+}
+.col:active {
+	color: crimson;
+}
+.col:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+#screen {
+	position: absolute;
+	border-radius: 0.45rem;
+	top: 92px;
+	left: 289px;
+	width: 190px;
+	height: 175px;
+	background: rgba(0, 0, 0, 0.6);
+	transform: perspective(205cm) rotateX(25deg) rotateY(2deg) rotateZ(-6deg);
+	display: flex;
+	flex-direction: column;
+	padding: 0.2rem;
+	justify-content: space-between;
+}
+#screen div {
+	z-index: 10;
+	color: green;
+	font-size: 20px;
+	letter-spacing: 0px;
+}
+#screen #currentBuffer,
+#screen #currentResult {
+  word-break: break-word;
+}
+#screen #lastResult {
+	font-size: 12px;
+}
+#screen #currentResult {
+	font-size: 30px;
+	text-align: right;
+}
+#resetButton:active span {
+	color: crimson;
+}
+#resetButton:hover {
+	background-color: rgba(42, 42, 42, 0.5);
+}
+#resetButton {
+	cursor: pointer;
+	position: absolute;
+	width: 140px;
+	height: 125px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 50%;
+	border: none;
+	bottom: -72px;
+	left: 350px;
+}
+#resetButton span {
+	font-size: 25px;
+	transform: rotateZ(-3deg);
+	position: absolute;
+	top: 20px;
+	left: 55px;
+}

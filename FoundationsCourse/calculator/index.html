@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>𝞭 Calculcator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="effects.css">
+	<script src="script.js" defer></script>
+	<script src="effects.js" defer></script>
+</head>
+<body>
+	<div id="curtain"></div>
+
+	<div id="calculator-container">
+		<div id="screen">
+			<div id="animation-screen"></div>
+			<div id="currentExpression">0</div>
+			<div class="row between">
+				<div id="lastResult"></div>
+				<div id="currentResult">=</div>
+			</div>
+		</div>
+		<div id="keyboard">
+			<div class="row">
+				<div class="col" id="operator7">7</div>
+				<div class="col" id="operator8">8</div>
+				<div class="col" id="operator9">9</div>
+				<div class="col" id="operatorMultiply">*</div>
+			</div>
+
+			<div class="row">
+				<div class="col" id="operator4">4</div>
+				<div class="col" id="operator5">5</div>
+				<div class="col" id="operator6">6</div>
+				<div class="col" id="operatorPlus">+</div>
+			</div>
+
+			<div class="row">
+				<div class="col" id="operator1">1</div>
+				<div class="col" id="operator2">2</div>
+				<div class="col" id="operator3">3</div>
+				<div class="col" id="operatorMinus">-</div>
+			</div>
+
+			<div class="row">
+				<div class="col" id="operator0">0</div>
+				<div class="col" id="operatorDot">.</div>
+				<div class="col" id="operatorDivision">/</div>
+				<div class="col" id="operatorResult">=</div>
+			</div>
+		</div>
+		<button id="resetButton"><span>AC</span></button>
+	</div>
+
+</body>
+</html>

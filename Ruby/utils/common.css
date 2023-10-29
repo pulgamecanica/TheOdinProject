@@ -26,6 +26,7 @@ body > #nav {
   background-color: papayawhip;
   border-right: 1px gray solid;
   box-shadow: 0 1px 4px 3px rgba(42, 42, 42, 0.3);
+  z-index: 1;
   flex: 1;
   margin: 0;
   padding: 0;

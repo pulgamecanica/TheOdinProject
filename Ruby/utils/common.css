@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  margin: 0;
+  padding: 0;
+  background-color: floralwhite;
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.1rem;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+body > #nav {
+  background-color: papayawhip;
+  border-right: 1px gray solid;
+  box-shadow: 0 1px 4px 3px rgba(42, 42, 42, 0.3);
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+pre em {
+  background-color: peachpuff;
+  border-radius: 0.25rem 0.25rem 0 0;
+  padding: 0.1rem 0.25rem;
+}
+
+body > #content {
+  background-color: floralwhite;
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#snippets {
+  overflow-y: scroll;
+}
+
+#snippets .snippet pre code {
+  overflow: scroll;
+}
+
+.snippet:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.lg-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.md-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sm-container {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sm-container a {
+  width: 100%;
+  border-bottom: 1px gray solid ;
+}
+.sm-container a h3 {
+
+  padding: 0.5rem;
+  font-weight: bolder;
+}
+.sm-container a:hover {
+  background-color: white;
+}
+
+.search-nav {
+  padding: 0.5rem 0;
+}
+
+#search {
+  margin: auto;
+  display: block;
+  width: 60%;
+  min-width: 100px;
+  padding: 12px 24px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #575756;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 95% center;
+  border-radius: 2rem;
+  border: 0.5px solid gray;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+#search::placeholder {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+#search:hover,
+#search:focus {
+  background-color: transparent;
+  padding: 12px 0;
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #575756;
+  border-radius: 0;
+  background-position: 100% center;
+}
+
+
+@media screen and (max-width: 500px) {
+  #search {
+    width: 85%;
+  }
+
+  body > #nav {
+    display: none;
+    flex: 0;
+  }
+} 

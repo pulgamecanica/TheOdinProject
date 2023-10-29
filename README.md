@@ -14,7 +14,7 @@
 
 | Course | 
 | ------ |
-| [FoundationsCourse](https://github.com/pulgamecanica/TheOdinProject/tree/main/FoundationsCourse) |
-| [Ruby](https://github.com/pulgamecanica/TheOdinProject/tree/main/Ruby) |
+| [FoundationsCourse](https://github.com/pulgamecanica/TheOdinProject/tree/main/FoundationsCourse/README.md) |
+| [Ruby](https://github.com/pulgamecanica/TheOdinProject/tree/main/Ruby/README.md) |
 
 

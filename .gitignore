@@ -3,3 +3,6 @@ FoundationsCourse/node_modules
 FoundationsCourse/node_modules/*
 
 package-lock.json
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
